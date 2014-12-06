@@ -1,0 +1,19 @@
+{
+	"category":[ 
+	
+	  	{
+	  	"title": "Buffalo Grill",
+	  	"desc": "Maecenas hendrerit odio nisi",
+	  	},
+	  	{
+	  	"title": "Castorama",
+	  	"desc": "non elementum velit commodo quis.",
+	  	},
+	  	{
+	  	"title": "Carrefour Market",
+	  	"desc": "Odio nisi, commodo quis hendrerit odio.",
+	  	}
+	  	
+	]
+	
+}
