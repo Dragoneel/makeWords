@@ -14,7 +14,7 @@ Ext.define('makeWords.model.Category', {
             },
             {
                 name: 'desc'
-            },
+            }
         ]
     }
 });

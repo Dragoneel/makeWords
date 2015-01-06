@@ -7,21 +7,30 @@ Ext.define('makeWords.store.Images', {
 
     extend: 'Ext.data.Store',
 
-    requires: [
-    	'makeWords.model.Image'
-    ],
+    // requires: [
+    // 	'makeWords.model.Image'
+    // ],
 
-    config: {
-    	autoLoad: true,
-    	model: 'makeWords.model.Image',
-    	storeId: 'Images',
-        proxy: {
-            type: 'ajax',
-            url: 'images.json',
-            reader: {
-                type: "json",
-                rootProperty: "images"
-            }
-        }
+    // config: {
+    // 	autoLoad: true,
+    // 	model: 'makeWords.model.Image',
+    // 	storeId: 'Images',
+    //     proxy: {
+    //         type: 'ajax',
+    //         url: 'images.json',
+    //         reader: {
+    //             type: "json",
+    //             rootProperty: "images"
+    //         }
+    //     }
+    // }
+    config:{
+        autoSync: true,
+        autoLoad: true,
+        model: 'makeWords.model.Image',
+        storId: 'Images'
     }
+
+
+
 });

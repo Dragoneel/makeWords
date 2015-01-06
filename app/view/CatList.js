@@ -8,7 +8,7 @@ Ext.define('makeWords.view.CatList', {
 
     config: {
 
-            itemTpl: '{desc}',
+            itemTpl: '{title}',
             store: 'JsonStore'
             // onItemDisclosure: true
 

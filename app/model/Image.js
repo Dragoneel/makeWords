@@ -9,12 +9,25 @@ Ext.define('makeWords.model.Image', {
 		'Ext.ux.touch.ImageGridList.model.Image'
 	],
 
+    /*requires: [
+        'Ext.data.Field'
+    ],*/
+
     extend: 'Ext.ux.touch.ImageGridList.model.Image',
+    //extend: 'Ext.data.Model',
     
     config: {
+        
        fields: [
             {name: 'url', type: 'string'},
-            {name: 'title', type: 'string'},
-        ] 
+            {name: 'title', type: 'string'}
+        ],
+        proxy: {
+            type: 'localstorage',
+            id  : 'images'
+            // type: "sql",
+            // database: "Info734",
+            // table: "Image"
+        }
     }
 });

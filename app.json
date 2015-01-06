@@ -1,4 +1,20 @@
 {
+    
+    "builds": {
+        "web": {"default": true},
+        "android": {
+            "packager": "cordova",
+            "cordova" : {
+                "config": {
+                    "platforms": "android",
+                    "id": "com.dchar.makeWords",
+                    "name": "makeWords"
+                }
+            }
+        }
+    },
+
+                
     /**
      * The application's namespace, used by Sencha Command to generate classes
      */
@@ -105,7 +121,9 @@
     "resources": [
         "resources/images",
         "resources/icons",
-        "resources/startup"
+        "resources/startup",
+        "/images.json",
+        "/cat.json"
     ],
 
     /**
